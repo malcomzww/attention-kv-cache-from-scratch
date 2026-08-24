@@ -80,7 +80,7 @@ class MultiHeadAttention(torch.nn.Module):
         return 2 * self.n_kv_heads * self.d_head * seq_len * batch * dtype_bytes
 
     @torch.no_grad()
-    def load_numpy_weights(self, np_mha) -> "MultiHeadAttention":
+    def load_numpy_weights(self, np_mha) -> MultiHeadAttention:
         """Copy weights from the NumPy module so the two can be compared.
 
         nn.Linear stores weight as (out_features, in_features) and computes
