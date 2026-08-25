@@ -51,7 +51,7 @@ changes which of the four available fixes you reach for.
 ## Quickstart
 
 ```bash
-git clone https://github.com/moclamzw/attention-kv-cache-from-scratch
+git clone https://github.com/malcomzww/attention-kv-cache-from-scratch
 cd attention-kv-cache-from-scratch
 uv sync --extra dev          # or: pip install -e ".[dev]"
 python -m pytest -q
